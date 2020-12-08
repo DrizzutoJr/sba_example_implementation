@@ -33,7 +33,7 @@ resource "vault_mount" "credstorev1-kvv2" {
 
   depends_on = [module.credstorev1-namespace]
 
-  path = "credstore"
+  path = "secrets/credstore"
   type = "kv-v2"
   description = "Secret Enigne for credstorev1 service"
 }
